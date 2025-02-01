@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Page</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #0073e6, #005bb5);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    header .top-right button {
+      background-color: white;
+      color: #0073e6;
+      border: none;
+      padding: 8px 15px;
+      margin-left: 10px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header .top-right button:hover {
+      background-color: #005bb5;
+      color: white;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .left-panel,
+    .right-panel {
+      background-color: #ffffff;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .left-panel {
+      flex: 2;
+    }
+
+    .right-panel {
+      flex: 3;
+    }
+
+    h2 {
+      color: #005bb5;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #eef2f3;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 8px 0;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .form-section label {
+      margin-top: 10px;
+      color: #333;
+      font-weight: bold;
+      display: block;
+      font-size: 0.95rem;
+    }
+
+    .form-section input[type="text"],
+    .form-section input[type="date"],
+    .form-section input[type="number"],
+    .form-section input[type="email"],
+    .form-section input[type="tel"],
+    .form-section select,
+    .form-section textarea {
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 95%;
+      font-size: 1rem;
+      box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .form-section input:focus,
+    .form-section select:focus,
+    .form-section textarea:focus {
+      border-color: #0073e6;
+      box-shadow: 0px 0px 8px rgba(0, 115, 230, 0.4);
+      outline: none;
+    }
+
+    .form-section button {
+      background-color: #0073e6;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .form-section button:hover {
+      background-color: #005bb5;
+    }
+
+    .info-box,
+    .price-info,
+    .cancel-info {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-box {
+      background-color: #f9f9f9;
+    }
+
+    .price-info {
+      background-color: #f1faff;
+      border: 2px dashed #0073e6;
+    }
+
+    .cancel-info {
+      background-color: #ffe9e9;
+      color: #d9534f;
+      font-weight: bold;
+    }
+
+    .final-details-button button {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      background: linear-gradient(to right, #0073e6, #005bb5);
+      border: none;
+      color: white;
+      padding: 15px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .final-details-button button:hover {
+      transform: scale(1.05);
+    }
+
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"> <img src="images/logo.png"  style="width:100px;"> </div>
+  </header>
+
+  <main>
+    <div class="left-panel">
+      <h2>Your Selection</h2>
+      <div id="your-selection">
+        <h3>Wee Silverburn</h3>
+        
+      </div>
+      <div>
+        <h2>Your Booking Details</h2>
+        <p><strong>Check-in:</strong> <span id="check-in">Sat 11 Jan 2025</span></p>
+        <p><strong>Check-out:</strong> <span id="check-out">Tue 11 Feb 2025</span></p>
+        <p><strong>Total Length of Stay:</strong> <span id="length-of-stay">31 nights</span></p>
+      </div>
+      <section class="house-rules-section">
+        <h2>Conditions/rules</h2>
+        <ul>
+          <li>No smoking</li>
+          <li>No parties/events</li>
+          <li>Pets are not allowed</li>
+        </ul>
+        <p>By continuing to the next step, you are agreeing to these house rules.</p>
+      </section>
+      <div class="price-info">
+        <h2>Total</h2>
+        <p><strong>Price:</strong> ₹385,648.15</p>
+        <p>Includes ₹60,880 in taxes and charges.</p>
+      </div>
+
+      <div class="cancel-info">
+        <p>How much will it cost to cancel?</p>
+        <p>If you cancel, you'll pay ₹385,648.</p>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <form id="booking-form">
+        <section class="form-section">
+          <h2>Enter Your Details</h2>
+          <label>First Name</label>
+          <input type="text" placeholder="First Name" required>
+
+          <label>Last Name</label>
+          <input type="text" placeholder="Last Name" required>
+
+          <label>Email Address</label>
+          <input type="email" placeholder="Email Address" required>
+
+          <label>Country/Region</label>
+          <select>
+            <option value="India">India</option>
+          </select>
+
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+91">
+
+          
+        
+
+          <label>
+            <input type="checkbox" id="paperless-confirmation">
+            Yes, I'd like free paperless confirmation.
+          </label><br>
+
+          <label>Who are you booking for?</label>
+          <label>
+            <input type="radio" name="booking-for" value="main-guest" required>
+            I am the main guest
+          </label>
+          <label>
+            <input type="radio" name="booking-for" value="someone-else">
+            Booking is for someone else
+          </label><br> 
+
+          <label>Are you travelling for work?</label>
+          <label>
+            <input type="radio" name="work-travel" value="yes" required>
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="work-travel" value="no">
+            No
+          </label>
+
+          <button type="submit">Submit</button>
+        </section>
+      </form>
+
+      
+      <div class="container">
+        
+
+        <section class="special-requests-section">
+          <h2>Special requests</h2>
+          <p>Special requests cannot be guaranteed – but the property will do its best to meet your needs. You can always make a special request after your booking is complete!</p>
+          <textarea placeholder="Please write your requests in English. (optional)"></textarea>
+        </section>
+
+        <section class="arrival-time-section">
+          <h2>Your arrival time</h2>
+          <p><strong>✔ You can check in at 15:00</strong></p>
+          <label for="arrival-time">Add your estimated arrival time</label>
+          <select id="arrival-time">
+            <option value="" disabled selected>Please select</option>
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+          </select>
+        </section>
+
+        
+
+        <div class="final-details-button">
+          <button>Next: Final details</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
