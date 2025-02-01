@@ -44,7 +44,7 @@ Here are a few screenshots of the Keto Resort Website to give you an idea of its
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/keto-resort-website.git
+   git clone https://github.com/Lalit48/Resort.git
    ```
 
 2. Navigate to the project folder:
