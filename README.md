@@ -21,8 +21,8 @@ The **Keto Resort Website** is a sleek, modern website that allows users to expl
 - **HTML5**: For structure and content.
 - **CSS3**: For styling and layout.
 - **JavaScript**: For interactivity and form validations.
-- **PHP**: For the backend functionality of the booking system (if applicable).
-- **MySQL**: For storing customer data and reservations (if applicable).
+- **PHP**: For the backend functionality of the booking system.
+- **MySQL**: For storing customer data and reservations.
 
 ## Screenshots
 
