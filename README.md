@@ -49,7 +49,7 @@ Here are a few screenshots of the Keto Resort Website to give you an idea of its
 
 2. Navigate to the project folder:
    ```bash
-   cd keto-resort-website
+   cd Resort
    ```
 
 3. Open the project in your preferred code editor.
