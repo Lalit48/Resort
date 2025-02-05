@@ -124,7 +124,7 @@ try {
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
+                              <li class="nav-item ">
                                  <a class="nav-link" href="index.php">Home</a>
                               </li>
                               <li class="nav-item">
@@ -133,7 +133,7 @@ try {
                               <li class="nav-item">
                                  <a class="nav-link" href="room.php">Our room</a>
                               </li>
-                              <li class="nav-item">
+                              <li class="nav-item active">
                                  <a class="nav-link" href="gallery.php">Gallery</a>
                               </li>
                               
