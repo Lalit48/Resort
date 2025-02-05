@@ -326,7 +326,7 @@ if ($result->num_rows > 0) {
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <p class="margin_0">Lorem Ipsum available, but the majority have suffered</p>
+                     <p class="margin_0"> Impeccable Ipsum available, but the majority have suffered</p>
                   </div>
                </div>
             </div>
