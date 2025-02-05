@@ -408,7 +408,7 @@ try {
                      <div class="col-md-3 col-sm-6">
                          <div class="gallery_img">
                              <figure>
-                                 <img src="<?= htmlspecialchars($image['image_url']); ?>" alt="Gallery Image"/>
+                                 <img src="<?= htmlspecialchars($image['image_urls']); ?>" alt="Gallery Image"/>
                              </figure>
                          </div>
                      </div>
