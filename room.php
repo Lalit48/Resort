@@ -284,13 +284,13 @@ if ($result->num_rows > 0) {
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
+                              <li class="nav-item">
                                  <a class="nav-link" href="index.php">Home</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="about.html">About</a>
                               </li>
-                              <li class="nav-item">
+                              <li class="nav-item active">
                                  <a class="nav-link" href="room.php">Our room</a>
                               </li>
                               <li class="nav-item">
@@ -383,9 +383,9 @@ if ($result->num_rows > 0) {
                <div class="col-md-4 menu-section">
                   <h3>Menu Link</h3>
                   <ul class="link_menu">
-                     <li class="active"><a href="index.php">Home</a></li>
-                     <li><a href="about.html">about</a></li>
-                     <li><a href="room.php">Our Room</a></li>
+                     <li><a href="index.php">Home</a></li>
+                     <li ><a href="about.html">about</a></li>
+                     <li class="active"><a href="room.php">Our Room</a></li>
                      <li><a href="gallery.php">Gallery</a></li>
                      <li><a href="contact.html">Contact Us</a></li>
                   </ul>
