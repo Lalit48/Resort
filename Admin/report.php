@@ -51,10 +51,10 @@
     <!-- Sidebar -->
     <div id="sidebar">
         <h4 class="text-center py-3">Dashboard</h4>
-        <a href="#">🏠 Home</a>
-        <a href="#">🛏️ Rooms</a>
-        <a href="#">📅 Bookings</a>
-        <a href="#">📊 Reports</a>
+        <a href="Dashbord.php">🏠 Home</a>
+        <a href="roomdashbord.php">🛏️ Rooms</a>
+        <a href="bookingsdashbord.php">📅 Bookings</a>
+        <a href="report.php">📊 Reports</a>
     </div>
 
     <!-- Main Content -->
