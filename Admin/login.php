@@ -36,7 +36,7 @@ if ($result->num_rows === 1) {
     // Successful login
     $_SESSION['authenticated'] = true;
     $_SESSION['username'] = $username;
-    header("Location: dashboard.php");
+    header("Location: Dashbord.php");
     exit();
 } else {
     // Invalid credentials
